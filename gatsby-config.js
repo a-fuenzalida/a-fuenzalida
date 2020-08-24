@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Andrés Fuenzalida`,
+    description: `Portafolio de Andrés Fuenzalida`,
+    author: `Andrés Fuenzalida`
+  },
   plugins: [`gatsby-plugin-styled-components`],
 }
