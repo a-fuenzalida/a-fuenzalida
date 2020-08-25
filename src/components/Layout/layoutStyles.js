@@ -2,16 +2,20 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     background: #14161a;
     color: #fff;
-    overflow-x: hidden;
   }
 `
 
 export const LayoutBody = styled.div`
+  max-width: 100vw;
+  position: relative;
+  height: 100vh;
   display: flex;
   justify-content: left;
 `
@@ -21,4 +25,8 @@ export const Main = styled.main`
   display: flex;
   align-items: center;
   margin-left: 60px;
+
+  @media (max-width: 640px) {
+    margin: 0 16px;
+  }
 `

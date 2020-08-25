@@ -1,26 +1,26 @@
 export const navigationData = [
   {
     title: 'Inicio',
-    icon: 'Home',
+    icon: 'home',
     url: '/',
     active: false
   },
   {
     title: 'Sobre mi',
-    icon: 'About',
-    url: '/about',
+    icon: 'about',
+    url: '/about/',
     active: false
   },
   {
     title: 'Proyectos',
-    icon: 'Projects',
-    url: '/projects',
+    icon: 'projects',
+    url: '/projects/',
     active: false
   },
   {
     title: 'Contacto',
-    icon: 'Contact',
-    url: '/contact',
+    icon: 'contact',
+    url: '/contact/',
     active: false
   },
 ]
@@ -44,3 +44,8 @@ export const socialData = [
     url: `https://www.linkedin.com/in/andr%C3%A9s-fuenzalida-solorza-851181161/`
   },
 ]
+
+export const aboutData = {
+  title: 'SOBRE MÍ',
+  text: 'Me apasiona el desarrollo web, las tecnologías modernas y las últimas tendencias de diseño. Mi objetivo es proporcionar un equilibrio entre una buena experiencia de usuario y un sistema robusto que respalde cuidadosamente la información relevante.'
+}
