@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from 'styled-components'
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     box-sizing: border-box;
@@ -11,21 +11,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const LayoutBody = styled.div`
+export const LayoutBody = styled.div`
   display: flex;
   justify-content: left;
 `
 
-const Main = styled.main`
+export const Main = styled.main`
   width: 100%;
   display: flex;
-  justify-content: left;
   align-items: center;
   margin-left: 60px;
 `
-
-export {
-  GlobalStyle,
-  LayoutBody,
-  Main
-}

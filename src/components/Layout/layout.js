@@ -1,6 +1,6 @@
-import React, { Fragment } from "react"
-import { GlobalStyle, LayoutBody, Main } from "./layoutStyles"
-import Navigation from "./navigation"
+import React, { Fragment } from 'react'
+import { GlobalStyle, LayoutBody, Main } from './layoutStyles'
+import Navigation from '../Navigation/navigation'
 
 export default function Layout({ children }) {
   return (

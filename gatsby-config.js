@@ -8,7 +8,21 @@ module.exports = {
   siteMetadata: {
     title: `Andrés Fuenzalida`,
     description: `Portafolio de Andrés Fuenzalida`,
-    author: `Andrés Fuenzalida`
+    author: `Andrés Fuenzalida`,
   },
-  plugins: [`gatsby-plugin-styled-components`],
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`100`, `200`, `300`, `400`, `600`, `700`]
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-react-helmet`
+  ],
 }
