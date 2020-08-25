@@ -24,7 +24,11 @@ export const Nav = styled.aside`
 `
 
 export const Item = styled.div`
-  margin: 10px 0;
+  margin: 1.5vh 0;
+
+  @media (max-width: 1080px) {
+    margin: 10px 0;
+  }
 
   @media (max-width: 640px) {
     margin: 15px 0;

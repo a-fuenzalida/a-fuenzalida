@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import NET from 'vanta/dist/vanta.net.min'
-import { GlobalStyle, LayoutBody, Main } from './layoutStyles'
-import Navigation from '../Navigation/navigation'
+import { GlobalStyle, LayoutBody, Main } from './Layout.styled'
+import Navigation from '../Navigation/Navigation'
 
 export default function Layout({ actualPage, children }) {
   const [vantaEffect, setVantaEffect] = useState(0)

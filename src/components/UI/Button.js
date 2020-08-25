@@ -3,12 +3,12 @@ import styled from 'styled-components'
 const Button = styled.a`
   background-color: transparent;
   backdrop-filter: blur(3px);
-  border: 2px solid #b06ab3;
+  border: 0.15vw solid #b06ab3;
   margin: 5px 0;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2vw;
   font-family: inherit;
   font-weight: 600;
   color: #b06ab3;
@@ -27,6 +27,10 @@ const Button = styled.a`
 
   &:not(:first-child) {
     margin: 5px;
+  }
+
+  @media (max-width: 1080px) {
+    font-size: 1em;
   }
 `
 

@@ -1,7 +1,6 @@
 import React from 'react'
-import Layout from '../components/Layout/layout'
-import { Container, Title } from '../components/UI'
-import { Subtitle } from '../components/Pages/indexStyles'
+import Layout from '../components/Layout/Layout'
+import { Container, Title, Text } from '../components/UI'
 
 import { aboutData } from '../mock/data'
 
@@ -11,7 +10,7 @@ export default function About(props) {
       <Container>
         <div>
           <Title>{aboutData.title}</Title>
-          <Subtitle>{aboutData.text}</Subtitle>
+          <Text>{aboutData.text}</Text>
         </div>
       </Container>
     </Layout>

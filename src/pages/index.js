@@ -1,9 +1,7 @@
 import React from 'react'
-import Layout from '../components/Layout/layout'
-import Button from '../components/UI/Button'
-import { Epigraph, Subtitle, Figures } from '../components/Pages/indexStyles'
-import { Container, Title } from '../components/UI'
-import Icon from '../../assets/Icon'
+import Layout from '../components/Layout/Layout'
+import { Container, Title, Icon, Button } from '../components/UI'
+import { Epigraph, Subtitle, Figures } from '../styles/index.styled'
 
 import { homeData, socialData } from '../mock/data'
 
