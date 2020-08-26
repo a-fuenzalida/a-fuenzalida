@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return i}));var a=n("q1tI"),l=n.n(a),r=n("yBb5"),c=n("JeLd"),u=n("9CUm"),o=n("jooN");function i(e){return l.a.createElement(r.a,{actualPage:e.path},l.a.createElement(u.a,{title:"Sobre mí"}),l.a.createElement(c.c,null,l.a.createElement(c.h,null,o.a.title),o.a.text.map((function(e){return l.a.createElement(c.f,null,e)}))))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-c931dd284da5fba7f1be.js.map
