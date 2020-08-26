@@ -11,7 +11,7 @@ export default function Seo({ description, keywords, title, image, url, author }
         const metaTitle = title || data.site.siteMetadata.title
         const metaAuthor = author || data.site.siteMetadata.author
         const metaUrl = url || data.site.siteMetadata.url
-        const metaKeywords = keywords || ['andrés fuenzalida', 'andrés fuenzalida chile', 'andres fuenzalida', 'desarrollador web', 'programación', 'frontend developer', 'backend developer', 'fullstack developer']
+        const metaKeywords = keywords || ['andrés fuenzalida', 'andrés fuenzalida chile', 'andres fuenzalida', 'andrés fuenzalida web', 'desarrollador web', 'programación', 'frontend developer', 'backend developer', 'fullstack developer']
         return (
           <Helmet
             title={`Andrés Fuenzalida${title ? ` — ${title}` : ''}`}
@@ -73,6 +73,7 @@ const detailsQuery = graphql`
         description
         author
         image
+        url
       }
     }
   }
