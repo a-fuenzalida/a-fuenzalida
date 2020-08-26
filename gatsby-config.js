@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Andrés Fuenzalida`,
     description: `Portafolio de Andrés Fuenzalida. Desarrollador web.`,
-    url: `https://afuenzalida.codes`, 
+    url: `https://a-fuenzalida.github.io/`, 
     author: `Andrés Fuenzalida`,
     image: ``,
     twitterUsername: `@an_fuenzalida`
