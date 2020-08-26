@@ -47,5 +47,8 @@ export const socialData = [
 
 export const aboutData = {
   title: 'SOBRE MÍ',
-  text: 'Me apasiona el desarrollo web, las tecnologías modernas y las últimas tendencias de diseño. Mi objetivo es proporcionar un equilibrio entre una buena experiencia de usuario y un sistema robusto que respalde cuidadosamente la información relevante.'
+  text: [
+    'Me apasiona el desarrollo web, las tecnologías modernas y las últimas tendencias de diseño.',
+    'Mi objetivo es brindar un equilibrio entre una buena experiencia de usuario y un sistema robusto que respalde cuidadosamente la información.'
+  ]
 }

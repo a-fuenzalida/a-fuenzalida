@@ -1,29 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/Layout/Layout'
-import { Container, Title, Button, Icon } from '../components/UI'
-import { Epigraph, Subtitle, Figures } from '../styles/index.styled'
-
-import { homeData, socialData } from '../mock/data'
+import { Container, Title, Input, Textarea } from '../components/UI'
+import { InputGroup } from '../styles/contact.styled'
+import Seo from '../components/Seo'
 
 export default function Contact(props) {
+  const [values, setValues] = useState({})
+
+  const handleChange = event => {
+    const { target } = event
+    const { name, value } = target
+    setValues({
+      ...values,
+      [name]: value
+    })
+  }
+
   return (
     <Layout actualPage={props.path}>
+      <Seo title="Contacto" />
       <Container>
-        <div>
-          <Epigraph>{homeData.epigraph}</Epigraph>
-          <Title>{homeData.title}</Title>
-          <Subtitle>{homeData.subtitle}</Subtitle>
-        </div>
-        <Figures>
-          {
-            socialData.map(social => (
-              <Button key={social.title} href={social.url} target="_blank">
-                <Icon name={social.icon} />
-                {' ' + social.title}
-              </Button>
-            ))
-          }
-        </Figures>
+        <Title>CONTACTO</Title>
+        <InputGroup>
+          <Input 
+            type="text" 
+            name="name" 
+            placeholder="Nombre" 
+            iconName="user"
+            autocomplete="off"
+            onChange={handleChange}
+            value={values.name}
+          />
+          <Input 
+            type="email" 
+            name="email" 
+            placeholder="Email" 
+            iconName="email" 
+            autocomplete="off"
+            onChange={handleChange}
+            value={values.email}
+          />
+        </InputGroup>
+        <Textarea 
+          name="message" 
+          placeholder="Mensaje"
+          autocomplete="off"
+          onChange={handleChange}
+          value={values.message}
+        />
       </Container>
     </Layout>
   )

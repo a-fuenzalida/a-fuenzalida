@@ -2,12 +2,14 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import { Container, Title, Icon, Button } from '../components/UI'
 import { Epigraph, Subtitle, Figures } from '../styles/index.styled'
+import Seo from '../components/Seo'
 
 import { homeData, socialData } from '../mock/data'
 
 export default function Home(props) {
   return (
     <Layout actualPage={props.path}>
+      <Seo />
       <Container>
         <div>
           <Epigraph>{homeData.epigraph}</Epigraph>

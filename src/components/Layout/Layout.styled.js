@@ -24,9 +24,4 @@ export const Main = styled.main`
   width: 100%;
   display: flex;
   align-items: center;
-  margin-left: 60px;
-
-  @media (max-width: 640px) {
-    margin: 0 16px;
-  }
 `

@@ -7,8 +7,11 @@
 module.exports = {
   siteMetadata: {
     title: `Andrés Fuenzalida`,
-    description: `Portafolio de Andrés Fuenzalida`,
+    description: `Portafolio de Andrés Fuenzalida. Desarrollador web.`,
+    url: `https://afuenzalida.codes`, 
     author: `Andrés Fuenzalida`,
+    image: ``,
+    twitterUsername: `@an_fuenzalida`
   },
   plugins: [
     `gatsby-plugin-styled-components`,

@@ -5,6 +5,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 5vw;
+
+  @media (max-width: 640px) {
+    margin: 0 5vw;
+  }
 `
 
 export default Container;
